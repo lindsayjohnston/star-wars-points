@@ -1,0 +1,33 @@
+.Reader{
+    /* width: 200px;
+    height: 400px;
+    background-color: teal; */
+}
+
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.BrowseButton, .RemoveButton, .GenerateButton{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: inherit;
+}
+
+.FileBox{
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

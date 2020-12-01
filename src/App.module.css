@@ -1,0 +1,57 @@
+.App {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(85, 84, 84);
+  padding-top: 100px;
+  position: relative;
+}
+
+.Header{
+  background-color: black;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  height: 100px;
+}
+
+.TitleDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.Logo{
+    width: 50px;
+    margin: 10px;
+}
+
+.Title{
+    color: white;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.NavLink{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.Selected{
+    color: rgb(249, 213, 94);
+}
+
+
+.PageArea{
+  padding: 20px;
+}
