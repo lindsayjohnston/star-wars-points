@@ -14,7 +14,6 @@ class App extends Component {
 }
 
 dataHandler = (data) => {
-  debugger
     console.log(data);
     this.setState({ data: data, table: null });
 }
@@ -83,7 +82,6 @@ componentDidUpdate() {
 }
 
 calculateCustomerPoints(name, customers) {
-    alert(`calculating ${name}'s points`);
     const tempData = this.state.data;
     let customer = null;
     let points=0;
@@ -146,7 +144,7 @@ render(){
           <Route
             path="/users" exact render={() => (<h1>USERS PAGE</h1>)}></Route>
           <Route
-            path="/sales" exact render={() => (<h1>SALES PAGE</h1>)}></Route>
+            path="/sales" exact render={() => this.state.table}></Route>
           <Route
             path="/" 
             exact 
