@@ -8,7 +8,7 @@ Deployed on AWS Amplify.
 
 ## How To Use
 
-Follow the link [here](lindsaykjohnston.com) to see the live app.
+Follow the link [here](https://master.d2sxml8azj8dyl.amplifyapp.com/) to see the live app.
 
 Choose to either use the dummy data --OR-- download, then upload the provided CSV file.
 
