@@ -141,15 +141,21 @@ render(){
           <nav >
             <NavLink to="/" exact activeClassName={styles.Selected} className={styles.NavLink}>Points</NavLink>
             <NavLink to="/users" exact activeClassName={styles.Selected} className={styles.NavLink}>Users</NavLink>
-            <NavLink to="/sales" exact activeClassName={styles.Selected} className={styles.NavLink}>Sales</NavLink>
+            <NavLink to="/purchases" exact activeClassName={styles.Selected} className={styles.NavLink}>Purchases</NavLink>
           </nav>
         </header>
 
         <div className={styles.PageArea}>
           <Route
-            path="/users" exact render={() => (<h1>USERS PAGE</h1>)}></Route>
+            path="/users" exact render={() => (
+              <h1>Users Page</h1>)}></Route>
           <Route
-            path="/sales" exact render={() => this.state.table}></Route>
+            path="/purchases" exact render={() => (
+              <div className={styles.PurchasesDiv}>
+                <h1>Purchases</h1>
+                {this.state.table}
+              </div>
+              )}></Route>
           <Route
             path="/" 
             exact 

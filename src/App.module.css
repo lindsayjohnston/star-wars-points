@@ -1,10 +1,14 @@
 
 .App {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: var(--secondary-color);
   padding-top: 100px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .Header{
@@ -56,4 +60,40 @@ nav{
 
 .PageArea{
   padding: 5vw 10vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.PurchasesDiv{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table{
+  width: calc(80% + 20px);
+  background-color: var(--main-color);
+  color: var(--light-color);
+  padding: 10px;
+  border-collapse: collapse;
+  border-left: 1px var(--light-color) solid;
+  border-top: 1px var(--light-color) solid;
+}
+
+tr{
+  border-bottom: 1px var(--light-color) solid;
+}
+
+td{
+  border-right: 1px var(--light-color) solid;
+  padding: 5px;
+}
+
+
+
+

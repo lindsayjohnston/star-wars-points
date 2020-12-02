@@ -1,5 +1,7 @@
 .Reader{
-   width: 100%;
+   width: 80%;
+   background-color: var(--main-color);
+   padding: 10px;
 }
 
 aside{
@@ -7,8 +9,9 @@ aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     margin: auto;
+    
 }
 
 .BrowserButtons{
@@ -17,7 +20,6 @@ aside{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: var(--secondary-color);
     width: 100%;
 }
 
@@ -28,7 +30,7 @@ aside{
 .FileBox{
     width: 200px;
     height: 40px;
-    background-color: white;
+    background-color: var(--light-color);
     display: flex;
     justify-content: center;
     align-items: center;

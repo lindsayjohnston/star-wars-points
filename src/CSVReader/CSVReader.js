@@ -52,6 +52,7 @@ class Reader extends Component {
                 >
                     {({ file }) => (
                         <aside>
+                            
                             <div className={styles.BrowserButtons}>
                                 <button
                                     type='button'
