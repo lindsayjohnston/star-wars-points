@@ -1,13 +1,14 @@
+
 .App {
   height: 100vh;
   width: 100%;
-  background-color: rgb(85, 84, 84);
+  background-color: var(--secondary-color);
   padding-top: 100px;
   position: relative;
 }
 
 .Header{
-  background-color: black;
+  background-color:var(--main-color);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -32,7 +33,7 @@
 }
 
 .Title{
-    color: white;
+    color: var(--light-color);
 }
 
 nav{
@@ -42,16 +43,17 @@ nav{
 }
 
 .NavLink{
-    color: white;
+    color: var(--light-color);
     text-decoration: none;
     margin-left: 10px;
+    font-size: 1.3rem;
 }
 
 .Selected{
-    color: rgb(249, 213, 94);
+    color: var(--highlight-color);
 }
 
 
 .PageArea{
-  padding: 20px;
+  padding: 5vw 10vw;
 }

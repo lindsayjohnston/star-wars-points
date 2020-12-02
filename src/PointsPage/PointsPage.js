@@ -20,7 +20,7 @@ class PointsPage extends Component {
         return (
             <div className={styles.PointsPage}>
                 <h1>Customer Loyalty Points Program</h1>
-                <p>You may use dummy data or upload a CSV file of your own. We've provided an example <a href={dummyData} download>CSV FILE</a> if you'd like to try the upload function! </p>
+                <p className={styles.Instructions}>You may use dummy data or upload a CSV file of your own. We've provided an example <a href={dummyData} download>CSV FILE</a> if you'd like to try the upload function! </p>
                 <button onClick={this.props.dummyData}>Use Dummy Data</button>
                 <h2>--OR--</h2>
                 <Reader dataLoaded={(data)=>this.props.dataLoaded(data)} />

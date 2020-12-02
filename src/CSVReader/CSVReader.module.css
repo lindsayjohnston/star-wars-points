@@ -1,7 +1,5 @@
 .Reader{
-    /* width: 200px;
-    height: 400px;
-    background-color: teal; */
+   width: 100%;
 }
 
 aside{
@@ -9,6 +7,8 @@ aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 .BrowserButtons{
@@ -16,15 +16,13 @@ aside{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--secondary-color);
+    width: 100%;
 }
 
 .BrowseButton, .RemoveButton, .GenerateButton{
     width: 100px;
-    height: 40px;
-    border: none;
-    border-radius: 10px;
-    margin: 10px;
-    font-family: inherit;
 }
 
 .FileBox{

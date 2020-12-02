@@ -1,17 +1,44 @@
 .PointsPage{
-    background-color: thistle;
+    background-color:var(--light-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .PointsPage h1{
     text-align: center;
+    color: var(--main-color);
+}
+
+.Instructions{
+    width: 80%;
+    text-align: center;
+}
+
+.Instructions > a{
+    color: rgb(59, 59, 206);
+    font-weight: bold;
+}
+
+.PointsPage > button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    background-color: var(--highlight-color);
+}
+
+.PointsPage > button:hover
+.PointsPage > button:active{
+    outline: 1px var(--main-color) solid;
 }
 
 table{
-    /* height: 500px; */
     width: 80%;
     background-color: white;
     color: black;
@@ -24,9 +51,8 @@ td{
     border-right: 1px solid grey;
 }
 
-.PointsDiv{
-    height: 400px;
-    width: 80%;
-}
+
+
+
 
 
