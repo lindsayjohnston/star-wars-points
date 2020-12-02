@@ -5,6 +5,7 @@ import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 import meteorSVG from './assets/meteor-solid.svg';
 import PointsPage from './PointsPage/PointsPage';
 // import { render } from '@testing-library/react';
+import testData from './assets/dummydata.json';
 
 class App extends Component {
   state = {
@@ -14,8 +15,12 @@ class App extends Component {
 }
 
 dataHandler = (data) => {
-    console.log(data);
-    this.setState({ data: data, table: null });
+    if(data !== null){
+      this.setState({ data: data, table: null });
+    } else{
+      this.setState({data: testData, table: null})
+    }
+    
 }
 
 generateTable = () => {
@@ -74,7 +79,6 @@ generateCustomerList = () => {
 
 componentDidUpdate() {
     console.log("in component did update");
-    //GENERATE TABLE OF DATA
     if (this.state.table === null) {
         this.setState({ table: this.generateTable(), customers: this.generateCustomerList() });
     }
@@ -124,6 +128,7 @@ calculateCustomerPoints(name, customers) {
 }
 
 render(){
+  
   return (
     <BrowserRouter>
       <div className={styles.App}>
@@ -152,6 +157,7 @@ render(){
               <PointsPage 
                 table={this.state.table}
                 customers={this.state.customers}
+                dummyData={()=>this.dataHandler(null)}
                 dataLoaded={(data)=>this.dataHandler(data)} />
             )}
            ></Route>

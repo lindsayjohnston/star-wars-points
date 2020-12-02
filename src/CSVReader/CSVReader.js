@@ -4,8 +4,8 @@ import styles from './CSVReader.module.css';
 const buttonRef = React.createRef();
 
 class Reader extends Component {
-    state={
-       loadedData: null
+    state = {
+        loadedData: null
     }
     handleOpenDialog = (e) => {
         // Note that the ref is set async, so it might be null at some point
@@ -17,7 +17,7 @@ class Reader extends Component {
     handleOnFileLoad = (data) => {
         console.log('---------------------------')
         console.log(data);
-        this.setState({loadedData: data})
+        this.setState({ loadedData: data })
         console.log('---------------------------')
     }
 
@@ -52,30 +52,37 @@ class Reader extends Component {
                 >
                     {({ file }) => (
                         <aside>
-                            <button
-                                type='button'
-                                onClick={this.handleOpenDialog}
-                                className={styles.BrowseButton}>
-                                Browse File
+                            <div className={styles.BrowserButtons}>
+                                <button
+                                    type='button'
+                                    onClick={this.handleOpenDialog}
+                                    className={styles.BrowseButton}>
+                                    Browse File
                             </button>
 
-                            <div className={styles.FileBox}>
-                                {file && file.name}
-                            </div>
-                            <button
-                               className={styles.RemoveButton}
-                                onClick={this.handleRemoveFile}>
-                                Remove
+                                <div className={styles.FileBox}>
+                                    {file && file.name}
+                                </div>
+                                <button
+                                    className={styles.RemoveButton}
+                                    onClick={this.handleRemoveFile}>
+                                    Remove
                             </button>
-                            <button 
+
+                            </div>
+
+                            <button
                                 className={styles.GenerateButton}
-                                onClick={()=>this.props.dataLoaded(this.state.loadedData)}
-                                >Generate Results</button>
+                                onClick={() => this.props.dataLoaded(this.state.loadedData)}
+                            >Generate Results</button>
+
                         </aside>
+
                     )}
+
                 </CSVReader>
 
-                
+
 
             </div>
 
