@@ -1,4 +1,4 @@
-![StarPoints Preview](./assets/starpoints_preview.png)
+![StarPoints Preview](src/assets/starpoints_preview.png)
 
 # Customer Loyalty Points Interface
 
