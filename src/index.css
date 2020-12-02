@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
 
-
 :root{
   --main-color:  rgb(26, 25, 25);
   --secondary-color: rgb(62, 61, 61);
@@ -40,7 +39,6 @@ button{
 button:active, 
 button:focus {
   outline: 1px var(--secondary-color) solid;
-  
 }
 
 h1{
@@ -49,5 +47,4 @@ h1{
   color: var(--light-color);
   padding: 10px;
   margin: 10px;
-  
 }

@@ -7,41 +7,41 @@ class Reader extends Component {
     state = {
         loadedData: null
     }
+
     handleOpenDialog = (e) => {
         // Note that the ref is set async, so it might be null at some point
         if (buttonRef.current) {
-            buttonRef.current.open(e)
+            buttonRef.current.open(e);
         }
     }
 
     handleOnFileLoad = (data) => {
-        console.log('---------------------------')
+        console.log('---------------------------');
         console.log(data);
-        this.setState({ loadedData: data })
-        console.log('---------------------------')
+        this.setState({ loadedData: data });
+        console.log('---------------------------');
     }
 
     handleOnError = (err, file, inputElem, reason) => {
-        console.log(err)
+        console.log(err);
     }
 
     handleOnRemoveFile = (data, handler) => {
-        console.log('---------------------------')
-        console.log(data)
-        console.log('---------------------------')
+        console.log('---------------------------');
+        console.log(data);
+        console.log('---------------------------');
     }
 
     handleRemoveFile = (e) => {
         // Note that the ref is set async, so it might be null at some point
         if (buttonRef.current) {
-            buttonRef.current.removeFile(e)
+            buttonRef.current.removeFile(e);
         }
     }
 
     render() {
         return (
             <div className={styles.Reader}>
-
                 <CSVReader
                     ref={buttonRef}
                     onFileLoad={this.handleOnFileLoad}
@@ -52,14 +52,13 @@ class Reader extends Component {
                 >
                     {({ file }) => (
                         <aside>
-                            
                             <div className={styles.BrowserButtons}>
                                 <button
                                     type='button'
                                     onClick={this.handleOpenDialog}
                                     className={styles.BrowseButton}>
                                     Browse File
-                            </button>
+                                </button>
 
                                 <div className={styles.FileBox}>
                                     {file && file.name}
@@ -68,29 +67,19 @@ class Reader extends Component {
                                     className={styles.RemoveButton}
                                     onClick={this.handleRemoveFile}>
                                     Remove
-                            </button>
-
+                                </button>
                             </div>
 
                             <button
                                 className={styles.GenerateButton}
                                 onClick={() => this.props.dataLoaded(this.state.loadedData)}
                             >Generate Results</button>
-
                         </aside>
-
                     )}
-
                 </CSVReader>
-
-
-
             </div>
-
         )
     }
 }
-
-
 
 export default Reader;

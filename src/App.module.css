@@ -7,7 +7,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -57,7 +56,6 @@ nav{
 .Selected{
     color: var(--highlight-color);
 }
-
 
 .PageArea{
   padding: 5vw 10vw;
