@@ -1,5 +1,6 @@
 .PointsPage{
     width: 100vw;
+    max-width: 800px;
     background-color:var(--secondary-color);
     display: flex;
     flex-direction: column;

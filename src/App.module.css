@@ -68,6 +68,7 @@ nav{
 
 .PurchasesDiv{
   width: 100vw;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
