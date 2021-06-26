@@ -1,6 +1,7 @@
 
 .App {
   min-height: 100vh;
+  min-width: 300px;
   width: 100%;
   background-color: var(--secondary-color);
   padding-top: 100px;
@@ -61,6 +62,7 @@ nav{
 .PageArea{
   padding: 5vw 10vw;
   width: 100%;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,10 +72,12 @@ nav{
 .PurchasesDiv{
   width: 100vw;
   max-width: 800px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
 }
 
 table{
