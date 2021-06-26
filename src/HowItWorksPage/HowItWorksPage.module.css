@@ -11,15 +11,21 @@
 
 .Instructions{
     width: 80%;
-    text-align: center;
+    /* text-align: center; */
     background-color: var(--main-color);
     padding: 10px;
     margin: 10px;
+    
 }
 
-.Instructions > a{
-    color: var(--highlight-color);
-    font-weight: bold;
+.Instructions > li{
+    line-height: 2rem;
+    padding-left: 22px;
+    text-indent: -22px;
+}
+
+.Indented{
+    margin-left: 55px;
 }
 
 .ButtonDiv{
@@ -57,3 +63,8 @@
 
 
 
+@media screen and (max-width: 600px) {
+    .Indented{
+        margin-left: 33px;
+    }
+  }

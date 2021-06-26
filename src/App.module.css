@@ -44,6 +44,7 @@ nav{
     display: flex;
     flex-direction: row;
     margin-right: 10px;
+    
 }
 
 .NavLink{
@@ -94,6 +95,15 @@ td{
   padding: 5px;
 }
 
+@media screen and (max-width: 600px) {
+  .Header{
+    height: 120px;
+    justify-content: center;
+  }
 
+  .NavLink{
+    font-size: .9rem;
+  }
+}
 
 

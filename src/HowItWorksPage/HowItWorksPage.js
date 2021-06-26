@@ -6,11 +6,21 @@ const howItWorksPage = () => {
 
     return (
         <div className={styles.PointsPage}>
-            <h1>Customer Loyalty Points Program</h1>
-            <p className={styles.Instructions}>You may use dummy data or upload a CSV file of your own.  </p>
-           
+            <h1>How StarPoints are Calulated</h1>
+            <p className={styles.Instructions}>
+                <li>
+                    Customers receive 2 StarPoints for every dollar spent over $100 in each transaction, plus 1 point for every dollar spent over $50 in each transaction.
+                </li>
+                <li className={styles.Indented}>
+                    (e.g. a $120 purchase = 2x$20 + 1x$50 = 90 points)
+                </li>
+                
+
+
+</p>
+
         </div>
     )
- }
-    
- export default howItWorksPage;
+}
+
+export default howItWorksPage;
