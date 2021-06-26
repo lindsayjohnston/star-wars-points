@@ -135,14 +135,13 @@ class App extends Component {
               exact 
               render={() => (
                 
-                  <HowItWorksPage />
-
-                
-                
+                  <HowItWorksPage /> 
                 
             )}></Route>
             <Route
-              path="/purchases" exact render={() => (
+              path="/purchases" 
+              exact 
+              render={() => (
                 <div className={styles.PurchasesDiv}>
                   <h1>Purchases</h1>
                   {this.state.table}
