@@ -3,6 +3,7 @@ import styles from './App.module.css';
 import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 import meteorSVG from './assets/meteor-solid.svg';
 import PointsPage from './PointsPage/PointsPage';
+import HowItWorksPage from './HowItWorksPage/HowItWorksPage';
 import testData from './assets/dummydata.json';
 
 class App extends Component {
@@ -122,16 +123,23 @@ class App extends Component {
               <h1 className={styles.Title}>StarPoints</h1>
             </div>
             <nav >
-              <NavLink to="/" exact activeClassName={styles.Selected} className={styles.NavLink}>Points</NavLink>
-              <NavLink to="/users" exact activeClassName={styles.Selected} className={styles.NavLink}>Users</NavLink>
+              <NavLink to="/" exact activeClassName={styles.Selected} className={styles.NavLink}>How It Works</NavLink>
+              <NavLink to="/pointsPage" exact activeClassName={styles.Selected} className={styles.NavLink}>Points</NavLink>
               <NavLink to="/purchases" exact activeClassName={styles.Selected} className={styles.NavLink}>Purchases</NavLink>
             </nav>
           </header>
 
           <div className={styles.PageArea}>
             <Route
-              path="/users" exact render={() => (
-                <h1>Users Page</h1>
+              path="/" 
+              exact 
+              render={() => (
+                
+                  <HowItWorksPage />
+
+                
+                
+                
             )}></Route>
             <Route
               path="/purchases" exact render={() => (
@@ -141,7 +149,7 @@ class App extends Component {
                 </div>
             )}></Route>
             <Route
-              path="/"
+              path="/pointsPage"
               exact
               render={(props) => (
                 <PointsPage
