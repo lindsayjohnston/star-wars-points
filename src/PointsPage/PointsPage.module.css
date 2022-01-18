@@ -44,6 +44,10 @@
     background-color: var(--highlight-color);
 }
 
+.PointsPage > h2{
+    text-align: center;
+}
+
 .PointsDiv{
     width: 80%;
     background-color: var(--main-color);
